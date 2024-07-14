@@ -24,13 +24,13 @@ public class RewardValue {
         return milesValue;
     }
 
-    // Convert cash to miles
-    private double cashToMiles(double cash) {
-        return cash / 0.0035;
+     // Convert cash to miles
+     private double cashToMiles(double cash) {
+        return cash / (1.0 / 0.0035); // Corrected conversion rate
     }
 
     // Convert miles to cash
     private double milesToCash(double miles) {
-        return miles * 0.0035;
+        return miles * (1.0 / 0.0035); // Corrected conversion rate
     }
 }
